@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'Screens/home.dart';
+import 'Screens/readyTimer.dart';
+import 'Screens/start_up.dart';
 
 void main() {
   runApp(const MyApp());

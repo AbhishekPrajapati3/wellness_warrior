@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wellness_warrior/Screens/start_up.dart';
 import 'package:wellness_warrior/widgets/custom_app_bar.dart';
 import 'package:wellness_warrior/widgets/custom_drawer.dart';
 
@@ -225,42 +226,45 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
                                           fontSize: 18),
                                     ),
                                   ),
-                                  Container(margin: EdgeInsets.only(bottom: 15),
-                                    child: Stack(
-                                      children: [
-                                        Container(
-                                          height: 150,
-                                         // margin: EdgeInsets.all(20),
-                                          decoration: BoxDecoration(
-                                              image: DecorationImage(
-                                                  fit: BoxFit.cover,
-                                                  image: AssetImage(
-                                                      'assets/images/yoga1.jpg'))),
-                                        ),
-                                        Container(
-                                          height: 150,
-                                        //  margin: EdgeInsets.all(20),
-                                          color: Colors.black26,
-                                        ),
-                                        Positioned(
-                                            left: 23,
-                                            top: 13,
-                                            child: Text(
-                                              "Yoga For Begineers",
-                                              style: TextStyle(
-                                                  color: Colors.white,
-                                                  fontSize: 20,
-                                                  fontWeight: FontWeight.bold),
-                                            )),
-                                        Positioned(
-                                            left: 35,
-                                            top: 40,
-                                            child: Text(
-                                              "Last Time : 2 feb",
-                                              style:
-                                                  TextStyle(color: Colors.white),
-                                            ))
-                                      ],
+                                  InkWell(
+                                    onTap: (){print("tap");Navigator.push(context,MaterialPageRoute(builder: (context)=>StartUp()));},
+                                    child: Container(margin: EdgeInsets.only(bottom: 15),
+                                      child: Stack(
+                                        children: [
+                                          Container(
+                                            height: 150,
+                                           // margin: EdgeInsets.all(20),
+                                            decoration: BoxDecoration(
+                                                image: DecorationImage(
+                                                    fit: BoxFit.cover,
+                                                    image: AssetImage(
+                                                        'assets/images/yoga1.jpg'))),
+                                          ),
+                                          Container(
+                                            height: 150,
+                                          //  margin: EdgeInsets.all(20),
+                                            color: Colors.black26,
+                                          ),
+                                          Positioned(
+                                              left: 23,
+                                              top: 13,
+                                              child: Text(
+                                                "Yoga For Begineers",
+                                                style: TextStyle(
+                                                    color: Colors.white,
+                                                    fontSize: 20,
+                                                    fontWeight: FontWeight.bold),
+                                              )),
+                                          Positioned(
+                                              left: 35,
+                                              top: 40,
+                                              child: Text(
+                                                "Last Time : 2 feb",
+                                                style:
+                                                    TextStyle(color: Colors.white),
+                                              ))
+                                        ],
+                                      ),
                                     ),
                                   ),
                                   Container(margin: EdgeInsets.only(bottom: 15),
