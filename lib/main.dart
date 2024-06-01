@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wellness_warrior/Screens/splash.dart';
 
 import 'Screens/home.dart';
 import 'Screens/readyTimer.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Home(),
+      home: const SplashScreen(),
     );
   }
 }
